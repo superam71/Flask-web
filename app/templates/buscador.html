@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <tittle>Buscador</tittle>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="search" id="search">
+            <form action="" method="POST">
+                {{ formulario.csrf_token }}
+                {{ formulario.country }}
+            <input type="submit" value="Buscar">
+            </form>
+        </div>
+    </body>
+</html>

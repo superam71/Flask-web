@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tittle>Busqueda de usuario</tittle>
+    <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <li class="nav-item active">
+            <a class="navbar-brand" href="/loghome">Log Home</a>
+    <table>
+        <tbody>
+            {% for campo in registros %}
+            <tr>
+                <td>{{campo[0]}}</td>
+                <td>{{campo[1]}}</td>
+                <td>{{campo[2]}}</td>
+                <td>{{campo[3]}}</td>
+                <td>{{campo[4]}}</td>
+                <td>{{campo[5]}}</td>
+                <td>{{campo[6]}}</td>
+                <td>{{campo[7]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tittle>Formulario</tittle>
+</head>
+<body>
+    <form action="" method="POST">
+        {{ formulario.csrf_token }}
+        <label for="">Nombre de Usuario</label>
+        {{ formulario.username }}
+        <label for="">Contraseña</label>
+        {{ formulario.password }}
+        <input type="submit" value="Ingresar">
+    </form>
+</body>
+</html>
